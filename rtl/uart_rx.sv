@@ -1,4 +1,4 @@
-module name #(
+module uart_rx #(
     parameter DATA_WIDTH = 8,
     BAUD_RATE = 115200,
     CLK_FREQ = 100_000_000,
