@@ -5,7 +5,7 @@ module uart_rx #(
 
     localparam LB_DATA_WIDTH    = $clog2(DATA_WIDTH),
     PULSE_WIDTH                 = CLK_FREQ / BAUD_RATE,
-    LB_PULSE_WIDTH              = $clog2(PULSE_WIDTH),
+    LB_PULSE_WIDTH              = $clog2(PULSE_WIDTH + HALF_PULSE_WIDTH),
     HALF_PULSE_WIDTH            = PULSE_WIDTH / 2
 ) (
     uart_if.rx rxif,

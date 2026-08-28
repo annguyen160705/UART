@@ -18,7 +18,7 @@ interface uart_if
         input sig, 
         output data,
         output valid,
-        input  ready
+        input  readyn
     );
     
 endinterface
